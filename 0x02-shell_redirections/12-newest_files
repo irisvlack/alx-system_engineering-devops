@@ -1,6 +1,17 @@
 #!/bin/bash
 
-# Use ls to list files in the current directory, sort them by modification time (newest first),
-# limit the output to the first 10 files, and display their names
-ls -lt | head -n 11
+count=0
+
+# Iterate over the files in the current directory
+for file in $(ls -t); do
+    if [ -f "$file" ]; then
+        echo "$file"
+        count=$((count + 1))
+    fi
+
+    # Break the loop after displaying 10 files
+    if [ "$count" -eq 10 ]; then
+        break
+    fi
+done
 
