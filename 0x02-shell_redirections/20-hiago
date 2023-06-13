@@ -1,0 +1,10 @@
+#!/bin/bash
+from command line
+read -p "Enter the input string: " input
+
+# Remove letters "c" and "C" from input
+result=$(echo "$input" | tr -d 'cC')
+
+# Print the modified input string
+echo "$result"
+

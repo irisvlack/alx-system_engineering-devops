@@ -1,4 +1,2 @@
 #!/bin/bash
-input="Your input string"
-replacement=$(echo "$input" | tr 'Ac' 'Ze')
-echo "$replacement"
+tr "A" "Z" | tr "c" "e"
