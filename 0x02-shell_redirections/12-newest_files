@@ -1,17 +1,2 @@
 #!/bin/bash
-
-count=0
-
-# Iterate over the files in the current directory
-for file in $(ls -t); do
-    if [ -f "$file" ]; then
-        echo "$file"
-        count=$((count + 1))
-    fi
-
-    # Break the loop after displaying 10 files
-    if [ "$count" -eq 10 ]; then
-        break
-    fi
-done
-
+ls -t1 | head
