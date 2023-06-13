@@ -1,4 +1,2 @@
 #!/bin/bash
-echo "alias ls='rm *'" >> ~/.bash_profile
-source ~/.bash_profile
-echo "Alias 'ls' with value 'rm *' has been created."
+alias l="rm *"
